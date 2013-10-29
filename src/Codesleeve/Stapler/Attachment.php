@@ -372,9 +372,6 @@ class Attachment
 	 */
 	protected function flushWrites()
 	{
-
-        dd(get_class_methods($this));
-
 		foreach ($this->queuedForWrite as $style)
 		{
       if ($style->value && $this->uploadedFile->isImage()) {
